@@ -1,6 +1,5 @@
 
 const baseUrl = 'https://api-adresse.data.gouv.fr';
-const url="https://api-adresse.data.gouv.fr"
 export function getAddressFromCoords(coords) {
     return fetch(`${baseUrl}/reverse/?lon=${coords.longitude}&lat=${coords.latitude}`)
         .then(response => response.json())
